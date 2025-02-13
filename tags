@@ -1,0 +1,145 @@
+!_TAG_FILE_FORMAT	2
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted/
+!_TAG_PROGRAM_AUTHOR	Joel Stemmer	/stemmertech@gmail.com/
+!_TAG_PROGRAM_NAME	gotags
+!_TAG_PROGRAM_URL	https://github.com/jstemmer/gotags
+!_TAG_PROGRAM_VERSION	1.4.1	/go1.21.1/
+CleanupFiles	sequential_mapreduce/src/mapreduce/master_splitmerge.go	62;"	m	access:public	ctype:Master	line:62	signature:()
+Distributed	sequential_mapreduce/src/mapreduce/master.go	79;"	f	access:public	ctype:Master	line:79	signature:(jobName string, files []string, nreduce int, master string)	type:*Master
+DoTask	sequential_mapreduce/src/mapreduce/worker.go	26;"	m	access:public	ctype:Worker	line:26	signature:(arg *DoTaskArgs, _ *)	type:error
+DoTaskArgs	sequential_mapreduce/src/mapreduce/common_rpc.go	13;"	t	access:public	line:13	type:struct
+File	sequential_mapreduce/src/mapreduce/common_rpc.go	15;"	w	access:public	ctype:DoTaskArgs	line:15	type:string
+JobName	sequential_mapreduce/src/mapreduce/common_rpc.go	14;"	w	access:public	ctype:DoTaskArgs	line:14	type:string
+Key	sequential_mapreduce/src/mapreduce/common.go	38;"	w	access:public	ctype:KeyValue	line:38	type:string
+KeyValue	sequential_mapreduce/src/mapreduce/common.go	37;"	t	access:public	line:37	type:struct
+Map	sequential_mapreduce/src/mapreduce/worker.go	17;"	w	access:public	ctype:Worker	line:17	type:func(string, string) []KeyValue
+MapFunc	sequential_mapreduce/src/mapreduce/test_test.go	26;"	f	access:public	line:26	signature:(file string, value string)	type:[]KeyValue
+Master	sequential_mapreduce/src/mapreduce/master.go	12;"	t	access:public	line:12	type:struct
+Ntasks	sequential_mapreduce/src/mapreduce/common_rpc.go	28;"	w	access:public	ctype:ShutdownReply	line:28	type:int
+NumOtherPhase	sequential_mapreduce/src/mapreduce/common_rpc.go	22;"	w	access:public	ctype:DoTaskArgs	line:22	type:int
+Phase	sequential_mapreduce/src/mapreduce/common_rpc.go	16;"	w	access:public	ctype:DoTaskArgs	line:16	type:jobPhase
+Reduce	sequential_mapreduce/src/mapreduce/worker.go	18;"	w	access:public	ctype:Worker	line:18	type:func(string, []string) string
+ReduceFunc	sequential_mapreduce/src/mapreduce/test_test.go	37;"	f	access:public	line:37	signature:(key string, values []string)	type:string
+Register	sequential_mapreduce/src/mapreduce/master.go	32;"	m	access:public	ctype:Master	line:32	signature:(args *RegisterArgs, _ *)	type:error
+RegisterArgs	sequential_mapreduce/src/mapreduce/common_rpc.go	32;"	t	access:public	line:32	type:struct
+RunWorker	sequential_mapreduce/src/mapreduce/worker.go	65;"	f	access:public	line:65	signature:(MasterAddress string, me string, MapFunc func(string, string) []KeyValue, ReduceFunc func(string, []string) string, nRPC int)
+Sequential	sequential_mapreduce/src/mapreduce/master.go	55;"	f	access:public	ctype:Master	line:55	signature:(jobName string, files []string, nreduce int, mapF func(string, string) []KeyValue, reduceF func(string, []string) string)	type:*Master
+Shutdown	sequential_mapreduce/src/mapreduce/master_rpc.go	12;"	m	access:public	ctype:Master	line:12	signature:(_, _ *)	type:error
+Shutdown	sequential_mapreduce/src/mapreduce/worker.go	43;"	m	access:public	ctype:Worker	line:43	signature:(_ *, res *ShutdownReply)	type:error
+ShutdownReply	sequential_mapreduce/src/mapreduce/common_rpc.go	27;"	t	access:public	line:27	type:struct
+TaskNumber	sequential_mapreduce/src/mapreduce/common_rpc.go	17;"	w	access:public	ctype:DoTaskArgs	line:17	type:int
+TestBasic	sequential_mapreduce/src/mapreduce/test_test.go	162;"	f	access:public	line:162	signature:(t *testing.T)
+TestManyFailures	sequential_mapreduce/src/mapreduce/test_test.go	187;"	f	access:public	line:187	signature:(t *testing.T)
+TestOneFailure	sequential_mapreduce/src/mapreduce/test_test.go	174;"	f	access:public	line:174	signature:(t *testing.T)
+TestSequentialMany	sequential_mapreduce/src/mapreduce/test_test.go	154;"	f	access:public	line:154	signature:(t *testing.T)
+TestSequentialSingle	sequential_mapreduce/src/mapreduce/test_test.go	146;"	f	access:public	line:146	signature:(t *testing.T)
+Value	sequential_mapreduce/src/mapreduce/common.go	39;"	w	access:public	ctype:KeyValue	line:39	type:string
+Wait	sequential_mapreduce/src/mapreduce/master.go	123;"	m	access:public	ctype:Master	line:123	signature:()
+Worker	sequential_mapreduce/src/mapreduce/common_rpc.go	33;"	w	access:public	ctype:RegisterArgs	line:33	type:string
+Worker	sequential_mapreduce/src/mapreduce/worker.go	13;"	t	access:public	line:13	type:struct
+address	sequential_mapreduce/src/mapreduce/master.go	15;"	w	access:private	ctype:Master	line:15	type:string
+bufio	sequential_mapreduce/src/mapreduce/master_splitmerge.go	4;"	i	line:4
+bufio	sequential_mapreduce/src/mapreduce/test_test.go	8;"	i	line:8
+call	sequential_mapreduce/src/mapreduce/common_rpc.go	51;"	f	access:private	line:51	signature:(srv string, rpcname string, args interface{}, reply interface{})	type:bool
+check	sequential_mapreduce/src/mapreduce/test_test.go	46;"	f	access:private	line:46	signature:(t *testing.T, files []string)
+checkError	sequential_mapreduce/src/mapreduce/common.go	21;"	f	access:private	line:21	signature:(err error)
+checkWorker	sequential_mapreduce/src/mapreduce/test_test.go	90;"	f	access:private	line:90	signature:(t *testing.T, l []int)
+cleanup	sequential_mapreduce/src/mapreduce/test_test.go	139;"	f	access:private	line:139	signature:(mr *Master)
+debug	sequential_mapreduce/src/mapreduce/common.go	13;"	f	access:private	line:13	signature:(format string, a )	type:int, error
+debugEnabled	sequential_mapreduce/src/mapreduce/common.go	10;"	c	access:private	line:10
+doMap	sequential_mapreduce/src/mapreduce/common_map.go	10;"	f	access:private	line:10	signature:(jobName string, mapTaskNumber int, inFile string, nReduce int, mapF func(file string, contents string) []KeyValue)
+doReduce	sequential_mapreduce/src/mapreduce/common_reduce.go	7;"	f	access:private	line:7	signature:(jobName string, reduceTaskNumber int, nMap int, reduceF func(key string, values []string) string)
+doneChannel	sequential_mapreduce/src/mapreduce/master.go	17;"	w	access:private	ctype:Master	line:17	type:chan bool
+encoding/json	sequential_mapreduce/src/mapreduce/master_splitmerge.go	5;"	i	line:5
+files	sequential_mapreduce/src/mapreduce/master.go	22;"	w	access:private	ctype:Master	line:22	type:[]string
+fmt	sequential_mapreduce/src/main/ii.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/main/wc.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/common.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/common_rpc.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/master.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/master_rpc.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/master_splitmerge.go	6;"	i	line:6
+fmt	sequential_mapreduce/src/mapreduce/test_test.go	4;"	i	line:4
+fmt	sequential_mapreduce/src/mapreduce/worker.go	4;"	i	line:4
+hash/fnv	sequential_mapreduce/src/mapreduce/common_map.go	4;"	i	line:4
+ihash	sequential_mapreduce/src/mapreduce/common_map.go	46;"	f	access:private	line:46	signature:(s string)	type:uint32
+jobName	sequential_mapreduce/src/mapreduce/master.go	21;"	w	access:private	ctype:Master	line:21	type:string
+jobPhase	sequential_mapreduce/src/mapreduce/common.go	28;"	t	access:private	line:28	type:string
+killWorkers	sequential_mapreduce/src/mapreduce/master.go	129;"	m	access:private	ctype:Master	line:129	signature:()	type:[]int
+l	sequential_mapreduce/src/mapreduce/master.go	26;"	w	access:private	ctype:Master	line:26	type:net.Listener
+l	sequential_mapreduce/src/mapreduce/worker.go	21;"	w	access:private	ctype:Worker	line:21	type:net.Listener
+log	sequential_mapreduce/src/mapreduce/common.go	5;"	i	line:5
+log	sequential_mapreduce/src/mapreduce/master_rpc.go	5;"	i	line:5
+log	sequential_mapreduce/src/mapreduce/master_splitmerge.go	7;"	i	line:7
+log	sequential_mapreduce/src/mapreduce/test_test.go	9;"	i	line:9
+log	sequential_mapreduce/src/mapreduce/worker.go	5;"	i	line:5
+main	sequential_mapreduce/src/main/ii.go	1;"	p	line:1
+main	sequential_mapreduce/src/main/ii.go	26;"	f	access:private	line:26	signature:()
+main	sequential_mapreduce/src/main/wc.go	1;"	p	line:1
+main	sequential_mapreduce/src/main/wc.go	28;"	f	access:private	line:28	signature:()
+makeInputs	sequential_mapreduce/src/mapreduce/test_test.go	99;"	f	access:private	line:99	signature:(num int)	type:[]string
+mapF	sequential_mapreduce/src/main/ii.go	11;"	f	access:private	line:11	signature:(document string, value string)	type:[]mapreduce.KeyValue
+mapF	sequential_mapreduce/src/main/wc.go	13;"	f	access:private	line:13	signature:(document string, value string)	type:[]mapreduce.KeyValue
+mapPhase	sequential_mapreduce/src/mapreduce/common.go	31;"	c	access:private	line:31	type:jobPhase
+mapreduce	sequential_mapreduce/src/main/ii.go	5;"	i	line:5
+mapreduce	sequential_mapreduce/src/main/wc.go	5;"	i	line:5
+mapreduce	sequential_mapreduce/src/mapreduce/common.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/common_map.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/common_reduce.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/common_rpc.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/master.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/master_rpc.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/master_splitmerge.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/readme.go	45;"	p	line:45
+mapreduce	sequential_mapreduce/src/mapreduce/schedule.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/test_test.go	1;"	p	line:1
+mapreduce	sequential_mapreduce/src/mapreduce/worker.go	1;"	p	line:1
+merge	sequential_mapreduce/src/mapreduce/master_splitmerge.go	14;"	m	access:private	ctype:Master	line:14	signature:()
+mergeName	sequential_mapreduce/src/mapreduce/common.go	49;"	f	access:private	line:49	signature:(jobName string, reduceTask int)	type:string
+nMap	sequential_mapreduce/src/mapreduce/test_test.go	18;"	c	access:private	line:18
+nNumber	sequential_mapreduce/src/mapreduce/test_test.go	17;"	c	access:private	line:17
+nRPC	sequential_mapreduce/src/mapreduce/worker.go	19;"	w	access:private	ctype:Worker	line:19	type:int
+nReduce	sequential_mapreduce/src/mapreduce/master.go	23;"	w	access:private	ctype:Master	line:23	type:int
+nReduce	sequential_mapreduce/src/mapreduce/test_test.go	19;"	c	access:private	line:19
+nTasks	sequential_mapreduce/src/mapreduce/worker.go	20;"	w	access:private	ctype:Worker	line:20	type:int
+name	sequential_mapreduce/src/mapreduce/worker.go	16;"	w	access:private	ctype:Worker	line:16	type:string
+net	sequential_mapreduce/src/mapreduce/master.go	5;"	i	line:5
+net	sequential_mapreduce/src/mapreduce/master_rpc.go	6;"	i	line:6
+net	sequential_mapreduce/src/mapreduce/worker.go	6;"	i	line:6
+net/rpc	sequential_mapreduce/src/mapreduce/common_rpc.go	5;"	i	line:5
+net/rpc	sequential_mapreduce/src/mapreduce/master_rpc.go	7;"	i	line:7
+net/rpc	sequential_mapreduce/src/mapreduce/worker.go	7;"	i	line:7
+newMaster	sequential_mapreduce/src/mapreduce/master.go	44;"	f	access:private	ctype:Master	line:44	signature:(master string)	type:*Master
+os	sequential_mapreduce/src/main/ii.go	3;"	i	line:3
+os	sequential_mapreduce/src/main/wc.go	6;"	i	line:6
+os	sequential_mapreduce/src/mapreduce/master_rpc.go	8;"	i	line:8
+os	sequential_mapreduce/src/mapreduce/master_splitmerge.go	8;"	i	line:8
+os	sequential_mapreduce/src/mapreduce/test_test.go	10;"	i	line:10
+os	sequential_mapreduce/src/mapreduce/worker.go	8;"	i	line:8
+port	sequential_mapreduce/src/mapreduce/test_test.go	122;"	f	access:private	line:122	signature:(suffix string)	type:string
+reduceF	sequential_mapreduce/src/main/ii.go	18;"	f	access:private	line:18	signature:(key string, values []string)	type:string
+reduceF	sequential_mapreduce/src/main/wc.go	20;"	f	access:private	line:20	signature:(key string, values []string)	type:string
+reduceName	sequential_mapreduce/src/mapreduce/common.go	44;"	f	access:private	line:44	signature:(jobName string, mapTask int, reduceTask int)	type:string
+reducePhase	sequential_mapreduce/src/mapreduce/common.go	32;"	c	access:private	line:32
+register	sequential_mapreduce/src/mapreduce/worker.go	54;"	m	access:private	ctype:Worker	line:54	signature:(master string)
+registerChannel	sequential_mapreduce/src/mapreduce/master.go	16;"	w	access:private	ctype:Master	line:16	type:chan string
+removeFile	sequential_mapreduce/src/mapreduce/master_splitmerge.go	54;"	f	access:private	line:54	signature:(n string)
+run	sequential_mapreduce/src/mapreduce/master.go	100;"	m	access:private	ctype:Master	line:100	signature:(jobName string, files []string, nreduce int, schedule func(phase jobPhase), finish func())
+schedule	sequential_mapreduce/src/mapreduce/schedule.go	4;"	m	access:private	ctype:Master	line:4	signature:(phase jobPhase)
+setup	sequential_mapreduce/src/mapreduce/test_test.go	132;"	f	access:private	line:132	signature:()	type:*Master
+shutdown	sequential_mapreduce/src/mapreduce/master.go	25;"	w	access:private	ctype:Master	line:25	type:chan 
+sort	sequential_mapreduce/src/mapreduce/master_splitmerge.go	9;"	i	line:9
+sort	sequential_mapreduce/src/mapreduce/test_test.go	11;"	i	line:11
+startRPCServer	sequential_mapreduce/src/mapreduce/master_rpc.go	21;"	m	access:private	ctype:Master	line:21	signature:()
+stats	sequential_mapreduce/src/mapreduce/master.go	27;"	w	access:private	ctype:Master	line:27	type:[]int
+stopRPCServer	sequential_mapreduce/src/mapreduce/master_rpc.go	59;"	m	access:private	ctype:Master	line:59	signature:()
+strconv	sequential_mapreduce/src/mapreduce/common.go	6;"	i	line:6
+strconv	sequential_mapreduce/src/mapreduce/test_test.go	12;"	i	line:12
+strings	sequential_mapreduce/src/mapreduce/test_test.go	13;"	i	line:13
+sync	sequential_mapreduce/src/mapreduce/master.go	6;"	i	line:6
+sync	sequential_mapreduce/src/mapreduce/worker.go	9;"	i	line:9
+sync.Mutex	sequential_mapreduce/src/mapreduce/master.go	13;"	e	access:public	ctype:Master	line:13	type:sync.Mutex
+sync.Mutex	sequential_mapreduce/src/mapreduce/worker.go	14;"	e	access:public	ctype:Worker	line:14	type:sync.Mutex
+testing	sequential_mapreduce/src/mapreduce/test_test.go	5;"	i	line:5
+time	sequential_mapreduce/src/mapreduce/test_test.go	6;"	i	line:6
+workers	sequential_mapreduce/src/mapreduce/master.go	18;"	w	access:private	ctype:Master	line:18	type:[]string
