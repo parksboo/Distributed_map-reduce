@@ -1,4 +1,4 @@
-#implementing distributed map/reduce using Golang
+# implementing distributed map/reduce using Golang
 ---
 this project is a part of coursework, distributed system in SKKU# Distributed MapReduce in Golang
 
