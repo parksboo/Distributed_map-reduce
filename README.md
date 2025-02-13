@@ -1,6 +1,5 @@
-# implementing distributed map/reduce using Golang
+# Distributed MapReduce in Golang
 ---
-this project is a part of coursework, distributed system in SKKU# Distributed MapReduce in Golang
 
 This project implements a distributed MapReduce framework using Golang. It is developed as part of the Distributed Systems coursework at Sungkyunkwan University (SKKU).
 
