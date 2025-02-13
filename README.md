@@ -19,3 +19,7 @@ The goal of this project is to demonstrate the principles of distributed computi
 ## Requirements
 
 - Go 1.18 or higher
+
+## Acknowledgements
+
+This assignment is adapted from MIT's 6.824 course. Thanks to Frans Kaashoek, Robert Morris, and Nickolai Zeldovich for their support.
